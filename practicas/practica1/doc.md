@@ -40,3 +40,20 @@ En esta practica crearemos un servidor nginx para mostras un simpe web site
 De esta forma tambien podermos hacer cambios desde el contendor y estos se veran reflejados en el directorio raiz del proyecto
 
 
+# Practica 1.2 
+
+Crear una image por medio de un Dockerfile 
+
+- Creamos un documento llamado  Dockerfile, en este documento pondremos las priciaples configuraciones necesarias para crear el servidor que mostrara nuestro html 
+
+- Nos quedaria asi 
+
+~~~
+FROM  nginx:version 
+WORKDIR /usr/share/nginx/html 
+COPY [sourceDir] [workDir] 
+~~~
+
+- FROM La imagen principal para realizar el proyecto
+- WORKDIR Directorio principal donde se trabajara 
+- COPY toma los arichivos necesario y  los mueve a donde son requeridos   
